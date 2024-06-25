@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS Tutorial</title>
+    <script src="https://kit.fontawesome.com/0c516309ce.js" crossorigin="anonymous"></script>
+    <style>
+        .wrapper {
+            content: "";
+            display: table;
+            clear: both;
+            width: 100%;
+            font-family: sans-serif;
+        }
+        .box {
+            float: left;
+            border: 1px solid lightgrey;
+            margin: auto;
+            width: 200px;
+            height: 250px;
+        }
+        .box p {
+            text-align: center;
+            letter-spacing: 5px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .box:nth-child(2) {
+            margin: 0 10px;
+        }
+        img {
+            width: 100%;
+            height: 60%;
+        }
+        button {
+            margin-top: 10px;
+            display: inline-block;
+            width: 150px;
+            margin-left: 22px;
+            border: none;
+            outline: none;
+            padding: 5px 0;
+            background: rgb(183, 137, 0);
+            color: whitesmoke;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box">
+            <p>Display: none</p>
+            <img src="/bg1.jpg" alt="">
+            <button type="button">Remove</button>
+        </div>
+        <div class="box">
+            <p>Visiblity: hidden</p>
+            <img src="/bg1.jpg" alt="">
+            <button type="button">hide</button>
+        </div>
+        <div class="box">
+            <p>Reset</p>
+            <img src="/bg1.jpg" alt="">
+            <button type="button">Reset All</button>
+        </div>
+        
+    </div>
+</body>
+</html>
